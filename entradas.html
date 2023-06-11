@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Bs As Conferencia</title>
+      <!--css-->
+      <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+      <link rel="stylesheet" href="asset/css/styles.css" />
+      <!--animate.css-->
+      <link rel="stylesheet" href="asset/css/animate.min.css">
+   <link rel="stylesheet" href="script.js">
+   <link rel="stylesheet" href="wow.min.js">
+   <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    </head>
+    
+  <body>
+      
+      <header class="container-fluid p-0 fixed-top">
+       <!-- BARRA DE NAVEGACION  class="container-fluid m-0 p-0"-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="media/codoacodo.png" alt="Logo" width="50"  class="d-inline-block align-text-top">Conf Bs As</a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                  <a class="nav-link disabled"  href="#conferencia">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link disabled" href="#oradores">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link disabled" href="#fecha">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link disabled" href="index.html">Conviértete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success"  href="index.html"><b>VOLVER</b></a>
+                         
+                
+                </li>
+                </ul>
+              </div>
+            </div>
+ </nav>     
+      
+      
+      <!-- menu de venta -->
+                
+      <div class="row justify-content-center g-1 mt-1 ">
+                  
+        <div class="col-md-2">
+                    <div class="border border-primary">
+                      <h4 class=" text-center"><br><b>Estudiante</b></h4>
+                        <h5 class="text-center">Tiene un descuento</h5>
+                        <h5 class="text-center"><b>80%</b></h5>
+                        <p class="text-center opacity-75 ">*presentar documentacíon</p>
+                    <br>
+                      </div>
+                  </div>
+                  <div class="col-md-2">
+                  <div class="border border-info">
+                     <h4 class=" text-center"><br><b>Trainee</b></h4>
+                      <h5 class="text-center">Tiene un descuento</h5>
+                      <h5 class="text-center"><b>50%</b></h5>
+                      <p class="text-center opacity-75">*presentar documentacíon</p>
+                    <br>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                  <div class="border border-warning">
+                  <h4 class=" text-center"><br><b>Junior</b></h4>
+                    <h5 class="text-center">Tiene un descuento</h5>
+                    <h5 class="text-center"><b>15%</b></h5>
+                    <p class="text-center opacity-75">*presentar documentacíon</p>
+                    <br>
+                  </div>
+                </div>
+          </div>        
+            
+
+
+
+          <section>
+                         <p class="text-center" style="margin: 0cqmin;">VENTA</p> 
+               <h1 class="text-center" style="margin: 0cqmin;">VALOR DE TICKET $200</h1>
+          </section>
+          
+
+
+
+          
+            <form id="form_conversor" method="POST" class="">
+                
+              <div class="row justify-content-center ">
+                <div class="col-3 mb-2">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col-3">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+              </div>                
+                <div class="row justify-content-center ">
+
+                <div class="col-6">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                </div>
+                <div class="row justify-content-center p-1">
+                    <div class="col-3 ">
+                        <label for="Cantidad">Cantidad   </label>
+                        <input type="number" min="0" id="Cantidad" class="form-control" placeholder="cantidad">
+                    </div>
+                    <div class="col-3">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" class="form-select">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </div>
+        
+                </div>
+        <div class="row justify-content-center mt-3">
+                <div class="alert alert-primary col-6 justify-content-center" role="alert" id="resultado">Total a Pagar: $</div>
+              </div>
+                <div class="row justify-content-center">
+                    <div class="col-3 p-1">
+                        <button type="reset" id="borrar" class="btn btn-success w-100" style="background-color:rgb(107, 208, 7) ; border-color: rgb(84, 161, 7);">Borrar</button>
+                    </div>
+                    <div class="col-3 p-1">
+                        <button type="submit" id="resumen" class="btn btn-success w-100" style="background-color:rgb(107, 208, 7) ; border-color: rgb(84, 161, 7);">Resumen</button>
+                    </div>
+                </div>
+            </form>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+            <script src="script.js"></script> 
+            <script src="wow.min.js"></script>
+            <script src="bootstrap.bundle.min.js"></script>
+          <div class="collapse background-color-white" id="collapseExample">
+</div>
+          </body>
+        </html>
+          
